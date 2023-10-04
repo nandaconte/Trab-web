@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Delícias da Dika</title>
     <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
 </head>
 <body>
+    <!-- Barra de Navegação -->
     <div class="container">
         <div class="navbar-container">
             <nav>
@@ -31,11 +34,12 @@
             </nav>
         </div>
         <main>
+            <!-- Seleção de sabores -->
             <div class="main-banner">
                 <h1>Delícias da Dika</h1>
                 <p>O bolo, quando feito com amor, tem até mais sabor!</p>
                 <section class="flavors">
-                    <label for="flavor" class="flavor">Conheça nossos Recheios:</label>
+                    <label for="flavor" class="flavor" #flavor-title>Conheça nossos recheios:</label>
                     <select name="flavor" id="flavor">
                         <option value=""></option>
                         <option value="Abacaxi">Abacaxi</option>
@@ -52,6 +56,16 @@
                     </select>
                 </section>
             </div>
+            <!-- FOTOS DE CLIENTES -->
+        <section class="pictures-container">
+            
+                <img src="./img/cake_yellowpink.jpeg" alt="Bolo de Aniversário Tardizinha">
+                <img src="./img/cake_green.jpeg" alt="Bolo de Aniversário Arca de Noel">
+                <img src="./img/cake_whitepink.jpeg" alt="Bolo de Aniversário Branco e Rosa">
+                <img src="./img/cake_yellow.jpeg" alt="Bolo de Aniversário Magali">           
+
+        </section>
+            <!-- Tamanhos e valores -->
             <section class="categories-container">
                 <p>Conheça nossos tamanhos:</p>
                 <div class="cat-container">
@@ -85,20 +99,21 @@
                     </div>
                 </div>                
             </section>
+            <!-- Newsletter -->
             <section class="news-container">
                 <h2>Receba nossas novidades e promoções:</h2>
                 <form>
-                    <input type="email" 
+                    <input type="e-mail" 
                     name="news"
                     id="news"
                     placeholder="Digite seu e-mail"
                     >
-                    <input type="submit" name="news" value="Receber novidades">
+                    <input type="submit" name="news" value="Receber novidades" #btn_enviar>
                 </form> 
             </section>
         </main>
+        <!-- Informações estabelecimento -->
         <div class="info-container">
-            <div class="info">
                 <ul>
                     <li>
                         <h3>Nossos Endereços:</h3>
@@ -113,8 +128,6 @@
                         <p>(92) 2453-9865</p>
                     </li>
                 </ul>
-            </div>
-            <div class="info">
                 <ul>
                     <li>
                         <h3>Horário de Funcionamento:</h3>
@@ -123,25 +136,40 @@
                         <p>Domingos e Feriados: 09:00 às 14:00</p>
                     </li>
                 </ul>
-            </div>
-            <div class="info">
                 <ul>
-                    <li>
+                    <li #pagamento>
                         <h3>Formas de Pagamento:</h3>                    
                     </li>
+                    <li #pagamento>
+                        <img src="./img/visto (1).png" alt="Bandeira Visa" class="icones-pagamento">
+                    </li>
+                    <li #pagamento>
+                        <img src="./img/cartao (1).png" alt="Bandeira Mastercard"class="icones-pagamento">
+                    </li >
+                    <li #pagamento>
+                        <img src="./img/pixeis (1).png" alt="Pagamento Pix"class="icones-pagamento">
+                    </li>
                 </ul>
-            </div>
-            <div class="info">
                 <ul>
                     <li>
                         <h3>Redes Sociais:</h3>                    
-                    </li>                
+                    </li> 
+                    <li>
+                        <a href="#">
+                        <img src="./img/facebook.png" alt="logo facebook" class="logo-redes">
+                        </a>
+                    </li>   
+                    <li>
+                        <a href="#">
+                        <img src="img/instagram.png" alt="logo instagram"class="logo-redes">
+                        </a>
+                    </li>            
                 </ul>
-            </div>
-        </div>
+            </div>  
+        
         <footer>
             <p>Direitos Autorais © Delícias da Dika</p>
         </footer>
-    </div>    
+          
 </body>
 </html>
